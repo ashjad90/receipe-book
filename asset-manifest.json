@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/receipe-book/static/css/main.deb8c001.css",
+    "main.css": "/receipe-book/static/css/main.f0728615.css",
     "main.js": "/receipe-book/static/js/main.78b6994a.js",
     "static/media/thali.png": "/receipe-book/static/media/thali.99f2d9fd29fe0e384ca9.png",
     "static/media/DarumadropOne-Regular.ttf": "/receipe-book/static/media/DarumadropOne-Regular.567ab9e55394ef139215.ttf",
@@ -8,11 +8,11 @@
     "static/media/Dosis-Medium.ttf": "/receipe-book/static/media/Dosis-Medium.40bfe3de1354a2b1be8b.ttf",
     "static/media/layered-waves.svg": "/receipe-book/static/media/layered-waves.0feffe262bf697e4265e.svg",
     "index.html": "/receipe-book/index.html",
-    "main.deb8c001.css.map": "/receipe-book/static/css/main.deb8c001.css.map",
+    "main.f0728615.css.map": "/receipe-book/static/css/main.f0728615.css.map",
     "main.78b6994a.js.map": "/receipe-book/static/js/main.78b6994a.js.map"
   },
   "entrypoints": [
-    "static/css/main.deb8c001.css",
+    "static/css/main.f0728615.css",
     "static/js/main.78b6994a.js"
   ]
 }
