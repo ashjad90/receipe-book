@@ -1,0 +1,31 @@
+@mixin image-basic($width,$height,$url,$size) {
+  width: $width;
+  height: $height;
+  background: url($url) no-repeat center;
+  background-color: inherit;
+  background-size: $size;
+}
+@mixin image-position($top,$right,$bottom,$left,$position) {
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  position: $position;
+}
+.thumbnail {
+  overflow: hidden;
+  width: 100%;
+  border-radius: 5px;
+  height: 31vh;
+  img {
+    width: 18vw;
+    height: 30vh;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: all 0.2s cubic-bezier(0.15, 0.69, 0.83, 0.67);
+    &:hover {
+      transform: scale(1.05);
+      box-sizing: border-box;
+    }
+  }
+}

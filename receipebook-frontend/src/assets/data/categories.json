@@ -1,0 +1,9 @@
+[
+    {"id":"starters","name":"Starters","receipes":["cutlet","breadCutlet","besanDhokla","riceDhokla"]},
+    {"id":"southIndian","name":"South Indian","receipes":["masalaDosa","sambhar","setDosa","idli","wada"]},
+    {"id":"rice","name":"Rice","receipes":["biryani","pulav","tomatoRice","tamarindRice","lemonRice"]},
+    {"id":"ekadashi","name":"Ekadashi","receipes":["shabudanaKhichadi","creamyPaneer","potatoFries","buckwheatWada"]},
+    {"id":"savory","name":"Savory","receipes":["gobiPakoda","sev","fafda","chakli"]},
+    {"id":"sabji","name":"Sabji","receipes":["rajma","kurkureBhindi","baiganChaap","paneerMasala","paneerTikka"]},
+    {"id":"chaat","name":"Chaat","receipes":["paniPuri","dahiPuri","choleRagda","samosaRagda","sevPuri"]}
+]

@@ -1,0 +1,18 @@
+@mixin button-basic($bg-color) {
+  font-size: 1vw;
+  background-color: $bg-color;
+  color: white;
+  border: none;
+  padding: 2vh 1.5vw;
+  border-radius: 5px;
+  box-shadow: 0 0 10px $primary-shadow;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+button {
+  @include button-basic($theme-color-dark);
+}
+.button-margin{
+  margin: 0 20px ;
+}

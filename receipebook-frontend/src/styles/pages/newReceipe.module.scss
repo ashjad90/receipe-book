@@ -1,0 +1,123 @@
+@import "../base/variable.module";
+@import "../base/input";
+@import "../base/card";
+@import "../base/images";
+
+.process {
+  ol {
+    list-style-type: none;
+    counter-reset: elementcounter;
+    padding-left: 0;
+  }
+
+  li:before {
+    content: "Step " counter(elementcounter) ". ";
+    counter-increment: elementcounter;
+    font-weight: bold;
+  }
+}
+.flexColumns {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sectionContainer {
+  height: 62vh;
+  background-color: $light-color;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 22vw;
+}
+.receipeImgSection {
+  @extend .sectionContainer;
+  background: $theme-color-dark;
+  color:$light-color;
+  label{
+    color:$light-color;
+  }
+  input{
+    width: 5vw;
+    &:first-child{
+        width: 100%;
+    }
+  }
+  .time{
+    display: flex;
+    justify-content: space-evenly;
+    input{
+        margin-right: 10px;
+    }
+   
+
+  }
+  .imgCard {
+    @extend .card;
+    margin: auto;
+    margin-bottom: 2vh;
+    background-color: $light-color;
+  }
+  .imgThumbnail {
+    @extend .thumbnail;
+    outline: 2px dotted $secondary-text-color;
+    height: 30vh;
+    img.blankImg {
+      transform: translateY(100%);
+      width: 5vw;
+      height: 10vh;
+    }
+  }
+}
+.receipeTitleSection {
+  @extend .sectionContainer;
+  width: 40vw;
+  input{
+    width: 100%;
+  }
+  textarea{
+    @include input-basics;
+    box-sizing: border-box;
+    width: 100%;
+    height: 25vh;
+  }
+}
+.receipeIngredientSection {
+  @extend .sectionContainer;
+  ol {
+    list-style-position: inside;
+    background-color: $highlight-light;
+    padding: 1vw;
+    border-radius: 0.25vw;
+    overflow: auto;
+    height: 40vh;
+  }
+  li {
+    text-align: left;
+    span {
+      &:last-child {
+        float: right;
+      }
+    }
+  }
+
+  .blankIngredient {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+i {
+  font-size: x-large;
+}
+.inputBasics {
+  width: 8vw;
+  @include input-basics;
+}
+.inputSmall {
+  width: 4vw;
+}
+.deleteDialog{
+  position: absolute;
+  margin: auto;
+  top: 50vh;
+}

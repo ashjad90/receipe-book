@@ -1,0 +1,18 @@
+.card {
+    font-size: 1.1vw;
+    width: 18vw;
+    margin: 2vh 0;
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 5px;
+    &:hover {
+        box-shadow: 0 5px 20px $primary-shadow;
+      }
+}
+body.dark {
+    .card {
+      &:hover {
+        box-shadow: 0 2px 20px $primary-shadow-dark;
+      }
+    }
+  }

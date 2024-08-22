@@ -1,0 +1,16 @@
+
+
+@mixin apply-theme($theme) {
+    $bg-color: $primary-bg-color;
+    $text-color: $primary-text-color;
+  
+    @if $theme == "dark" {
+      $bg-color: $primary-bg-color-dark;
+      $text-color: $primary-text-color-dark;
+    }
+    body {
+      background-color: $bg-color;
+      color: $text-color;
+    }
+  }
+  

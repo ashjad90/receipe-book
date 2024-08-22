@@ -1,0 +1,22 @@
+@mixin input-basics{
+  border: 1px solid $highlight-light;
+  border-radius: 1vh;
+  font-size: 1vw;
+  padding: 0.5vw;
+}
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  input {
+    @include input-basics;
+    box-sizing: border-box;
+  }
+}
+select {
+  @include input-basics;
+}

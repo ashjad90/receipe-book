@@ -1,0 +1,72 @@
+#root {
+  background-color: inherit;
+}
+
+.App {
+  position: relative;
+  overflow: hidden;
+  background-color: inherit;
+  font-family: header-font, "Courier New", Courier;
+  @include image-basic(
+    100vw,
+    100vh,
+    "../assets/images/layered-waves.svg",
+    cover
+  );
+}
+path {
+  opacity: 0.5;
+}
+.logo {
+  font-family: logo-font, "Courier New", Courier;
+  color: $theme-color-dark;
+  font-size: 3vw;
+  &::before {
+    content: url(../assets/images/leaf.png);
+  }
+}
+dialog {
+  background-color: $primary-bg-color;
+  z-index: 1;
+}
+.container {
+  width: 100vw;
+  height: 90vh;
+  background-color: inherit;
+  .header-shadow {
+    width: 100%;
+    height: 1vh;
+    box-shadow: 0 5px 5px $primary-shadow;
+  }
+}
+footer {
+  width: 100vw;
+  padding: 1vh;
+  position: fixed;
+  bottom: 0;
+  box-shadow: 10px 0 10px $primary-shadow;
+}
+
+body {
+  //this iframe is for hidding errors being displayed as overlay on browser
+  iframe {
+    display: none;
+  }
+  background-color: $primary-bg-color;
+  color: $primary-text-color;
+  &.dark {
+    background-color: $primary-bg-color-dark;
+    color: white;
+    footer {
+      box-shadow: 10px 0 10px $primary-shadow-dark;
+    }
+    .logo {
+      color: $theme-color-light;
+    }
+  }
+  &.disabled {
+    //&::before{
+    background-color: #00000044;
+    //}
+  }
+}

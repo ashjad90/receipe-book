@@ -1,0 +1,33 @@
+@import '../base/variable.module';
+@import "../base/card";
+@import '../base/images';
+
+.card {
+  @extend .card;
+
+  &:hover {
+    border-radius: 5px;
+    box-shadow: 0 5px 20px $primary-shadow;
+
+  }
+  .thumbnail {
+    @extend .thumbnail;
+  }
+  div:not(:first-child) {
+    width: 10vw;
+    float: left;
+  }
+  button {
+    float: right;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+body.dark {
+  .card {
+    &:hover {
+      box-shadow: 0 2px 20px $primary-shadow-dark;
+    }
+  }
+}

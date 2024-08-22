@@ -1,0 +1,17 @@
+@import '../base/images';
+
+.container {
+  margin: 15vh 0 0 10vw;
+
+  h1 {
+    font-family: header-font, "Courier New", Courier;
+    font-size: 4vw;
+    margin: 0;
+  }
+
+  .error404 {
+    @include image-basic(20vw, 50vh, "../../assets/images/error.png", contain);
+    @include image-position(30vh, 10vw, -1, -1, absolute);
+    animation: img-displace 2s 1;
+  }
+}

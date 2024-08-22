@@ -1,0 +1,7 @@
+@mixin icon-style($color){
+    &:hover {
+        outline: 10px solid $color;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+}
